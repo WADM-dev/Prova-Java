@@ -1,22 +1,55 @@
 package Devices;
-import java.util.ArrayList;
-import java.util.List;
 
-public abstract class Device {
-    public static void main(String[] args){
+public class Device {
 
-        List<DevicesInterface> Devices = new ArrayList<>();
-        Devices.add(new Smartphone());
-        Devices.add(new Laptop());
-        Devices.add(new SmartTv());
+    private String marca;
+    private String cor;
+    private double price;
+    private long numeroSerie;
 
-        for (DevicesInterface device : Devices.toArray(new DevicesInterface[0])) {
-            device.performAction();
-        }
-
+    void abastecerEnergia() {
+        System.out.println("Ligar aparelho no tomada e/ou carregador");
     }
 
+    public String getMarca() {
+        return marca;
+    }
 
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
 
+    public String getCor() {
+        return cor;
+    }
 
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public long getNumeroSerie() {
+        return numeroSerie;
+    }
+
+    public void setNumeroSerie(long numeroSerie) {
+        this.numeroSerie = numeroSerie;
+    }
+
+    @Override
+    public String toString() {
+        return "Device{" +
+                "marca='" + marca + '\'' +
+                ", cor='" + cor + '\'' +
+                ", price=" + price +
+                ", numeroSerie=" + numeroSerie +
+                '}';
+    }
 }

@@ -18,7 +18,6 @@ public class Car extends Transportation implements TransportationInterface {
 
     public void drive() {
         System.out.println("Dirigindo o Carro");
-
     }
 
     @Override

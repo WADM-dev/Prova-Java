@@ -1,6 +1,6 @@
 package Transportation;
 
 public interface TransportationInterface {
-    public void travel();
+    void travel();
 
 }
