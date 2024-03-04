@@ -18,4 +18,5 @@ public class Laptop extends Device implements DevicesInterface{
         System.out.println("Incializando Windows");
 
     }
+
 }
